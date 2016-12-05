@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:padding="6dip"
-                android:text="程序猿交友互助平台"
+                android:text="团队协同平台"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
             android:textColor="#3399ff"
