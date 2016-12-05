@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.hooaha.andr.im.zuzhii"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:support-v4:23.2.1'
+
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'cn.pedant.sweetalert:library:1.3'
+
+    compile "org.igniterealtime.smack:smack-android:4.1.8"
+    // Optional for XMPPTCPConnection
+    compile "org.igniterealtime.smack:smack-tcp:4.1.8"
+    // Optional for XMPP-IM (RFC 6121) support (Roster, Threaded Chats, …)
+    compile "org.igniterealtime.smack:smack-im:4.1.8"
+    // Optional for XMPP extensions support
+    compile "org.igniterealtime.smack:smack-extensions:4.1.8"
+    compile 'org.igniterealtime.smack:smack-bosh:4.1.8'
+    compile 'de.measite.minidns:minidns:0.1.7'
+    compile 'org.igniterealtime.smack:smack-resolver-minidns:4.1.8'
+    compile 'com.demievil.library:refreshlayout:1.0.0@aar'
+
+    compile files('libs/gson-2.5.jar')
+    compile 'com.rockerhieu.emojicon:library:1.3.3'
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
+
+
+    compile project(':multi-image-selector')
+
+//    compile files('lib/minidns-0.1.7.jar')
+//    compile files('lib/smack-android-4.2.0-alpha1.jar')
+//    compile files('lib/smack-core-4.2.0-alpha1.jar')
+//    compile files('lib/smack-extensions-4.2.0-alpha1.jar')
+//    compile files('lib/smack-im-4.2.0-alpha1.jar')
+//    compile files('lib/smack-resolver-minidns-4.2.0-alpha1.jar')
+//    compile files('lib/smack-sasl-provided-4.2.0-alpha1.jar')
+//    compile files('lib/smack-tcp-4.2.0-alpha1.jar')
+//    compile files('lib/xpp3-1.1.4c-withnoQname.jar')
+//    compile files('lib/jxmpp-jid-0.5.0-alpha1.jar')
+//    compile files('lib/jxmpp-util-cache-0.5.0-alpha1.jar')
+//    compile files('lib/jxmpp-core-0.5.0-alpha1.jar')
+//    compile files('lib/smack-android-extensions-4.2.0-alpha1.jar')
+//    compile files('lib/smack-java7-4.2.0-alpha1.jar')
+}
